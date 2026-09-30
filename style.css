@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #090c11;
+  color: #f4f6f8;
+  font: 16px 'DM Sans', sans-serif;
+  line-height: 1.65;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: rgba(9, 12, 17, 0.9);
+  border-bottom: 1px solid #242b35;
+  backdrop-filter: blur(12px);
+}
+
+header a {
+  color: #b8c0cc;
+  text-decoration: none;
+  margin-left: 22px;
+  font-size: 14px;
+}
+
+.logo {
+  font: 700 24px 'Space Grotesk', sans-serif;
+  color: #fff !important;
+  margin-left: 0;
+}
+
+.logo span,
+h1 span {
+  color: #91a7ff;
+}
+
+.hero {
+  min-height: 86vh;
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 7%;
+  display: grid;
+  grid-template-columns: 1.35fr 0.65fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: #91a7ff;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font: 700 clamp(54px, 8vw, 100px) / 0.95 'Space Grotesk', sans-serif;
+  letter-spacing: -5px;
+  margin: 15px 0;
+}
+
+.hero h2 {
+  font: 500 22px 'Space Grotesk', sans-serif;
+  color: #dce1e8;
+}
+
+.intro,
+.text {
+  color: #9da7b5;
+  max-width: 760px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 9px;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.primary {
+  background: #f4f6f8;
+  color: #090c11 !important;
+}
+
+.secondary {
+  border: 1px solid #343d49;
+  color: #f4f6f8;
+}
+
+.card {
+  background: #0e131b;
+  border: 1px solid #252d38;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.profile {
+  padding: 34px;
+}
+
+.avatar {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #18213a;
+  color: #aebdff;
+  font: 700 35px 'Space Grotesk', sans-serif;
+  margin-bottom: 25px;
+}
+
+.stats {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.stats b {
+  font-size: 20px;
+}
+
+.stats small {
+  display: block;
+  color: #7f8997;
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 95px 7%;
+}
+
+.section h2 {
+  font: 700 clamp(34px, 5vw, 58px) / 1.05 'Space Grotesk', sans-serif;
+  letter-spacing: -2px;
+  margin: 10px 0 25px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.skills h3 {
+  font: 700 18px 'Space Grotesk', sans-serif;
+}
+
+.skills p,
+.project p {
+  color: #9da7b5;
+}
+
+.projects {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project small {
+  color: #91a7ff;
+  font-weight: 700;
+}
+
+.project h3 {
+  font: 700 22px 'Space Grotesk', sans-serif;
+  margin: 20px 0 2px;
+}
+
+.project em {
+  font-size: 13px;
+  color: #d7dce4;
+}
+
+.tags {
+  margin-top: auto;
+  padding-top: 20px;
+  color: #aeb9c8;
+  font-size: 12px;
+}
+
+.timeline {
+  border-left: 1px solid #303844;
+  padding-left: 28px;
+  margin-top: 35px;
+}
+
+.timeline > div {
+  margin-bottom: 45px;
+  position: relative;
+}
+
+.timeline > div:before {
+  content: '';
+  position: absolute;
+  left: -34px;
+  top: 8px;
+  width: 9px;
+  height: 9px;
+  background: #91a7ff;
+  border-radius: 50%;
+}
+
+.timeline span {
+  color: #91a7ff;
+  font-size: 12px;
+}
+
+.timeline h3 {
+  font: 700 21px 'Space Grotesk', sans-serif;
+}
+
+.timeline p {
+  color: #9da7b5;
+}
+
+.certs div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.certs span {
+  color: #91a7ff;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.links a {
+  border: 1px solid #343d49;
+  border-radius: 9px;
+  padding: 10px 14px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #222a34;
+  color: #6f7987;
+  padding: 25px;
+  font-size: 12px;
+}
+
+@media (max-width: 850px) {
+  header nav {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 65px;
+  }
+
+  .projects,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding-top: 70px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+}
